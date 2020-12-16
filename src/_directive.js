@@ -138,7 +138,7 @@ function parallaxBackgroundPosition (el, offset, direction) {
 
 function parallaxTransform (el, offset, direction) {
   el.style.transition = `transform 0.1s ease-out`
-  el.style.transform = `translate${direction.toUpperCase()}(${Math.round(offset)}px)`
+  el.style.transform = `translate${direction.toUpperCase()}(${Math.round(offset)}px) translateZ(0)`
 }
 
 function addParallaxValueAsCssVariable (el, offset) {
